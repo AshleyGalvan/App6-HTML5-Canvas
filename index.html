@@ -40,11 +40,25 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
 var b_canvas = document.getElementById("myCanvas");
+	
 	//gives access to canvas element 
 
-var b_context = b_canvas.getContext("2d");
-b_context.fillRect(50, 25, 150, 100);
-	//This function adds the rectangle with the given dimensions	
+function draw_a() {   //creates rectangle
+   var a_canvas = document.getElementById("a");
+   var a_context = a_canvas.getContext("2d");
+   a_context.fillRect(15, 15, 30, 50);	//Codes for size of rectangle within canvas
+
+	//This function adds the rectangle 
+	
+function draw_name(){
+   var a_canvas = document.getElementById("a");
+   var a_context = a_canvas.getContext("2d");
+   a_context.fillRect("Ashley Galvan", 50, 80);
+	
+	// codes for name and size of it within the canvas
+
+	
+	
 
 
 	
@@ -93,10 +107,26 @@ b_context.fillRect(50, 25, 150, 100);
 	
 <div id="content" class="w3-container">
 	
-<button onclick= "draw_a();"> Draw Rectangle
+<button onclick= "draw_a();"> Draw rectangle
 	</button>
 	
 	<!-- This adds the button that adds rectangle to canvas-->
+	
+<button onclick = "draw_name();"> Draw name
+	</button>
+   
+	<!-- codes for the name button -->
+      
+<button onclick = "draw_image();"> Draw image
+	</button>
+    
+	<!-- codes for the image drawing button -->
+      
+<button onclick = "clear_canvas();"> Clear canvas
+	</button>
+     
+	<!-- codes for the button that will clear the canvas -->
+  
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
