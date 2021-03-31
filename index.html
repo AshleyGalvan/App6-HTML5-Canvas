@@ -39,9 +39,6 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-var b_canvas = document.getElementById("myCanvas");
-	
-	//gives access to canvas element 
 
 function draw_a() {   //creates rectangle
    var a_canvas = document.getElementById("a");
@@ -107,23 +104,19 @@ function draw_name(){
 	
 <div id="content" class="w3-container">
 	
-<button onclick= "draw_a();"> Draw rectangle
-	</button>
+<button onclick= "draw_a();"> Draw Rectangle </button>
 	
 	<!-- This adds the button that adds rectangle to canvas-->
 	
-<button onclick = "draw_name();"> Draw name
-	</button>
+<button onclick = "draw_name();"> Draw Name </button>
    
 	<!-- codes for the name button -->
       
-<button onclick = "draw_image();"> Draw image
-	</button>
+<button onclick = "draw_image();"> Draw Image </button>
     
 	<!-- codes for the image drawing button -->
       
-<button onclick = "clear_canvas();"> Clear canvas
-	</button>
+<button onclick = "clear_canvas();"> Clear Canvas </button>
      
 	<!-- codes for the button that will clear the canvas -->
   
