@@ -63,12 +63,12 @@ function clear_canvas() {
 	//this codes for the clearing images off of the canvas
 }
 	
-function drawimage() {
+function draw_image() {
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   var img=new image();
+   var img = new image();
    img.src="https://clipartix.com/wp-content/uploads/2016/04/Flowers-flower-clipart-images-clipart.png";
-   img.onload=function(){
+   img.onload= function(){
    a_context.drawimage(img, 100, 100);
 };
 	//This adds the image onto the canvas 
