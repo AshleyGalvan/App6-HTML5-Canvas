@@ -63,15 +63,17 @@ function clear_canvas() {
 	//this codes for the clearing images off of the canvas
 }
 
-  var canvas = document.getElementById("e");
+var canvas = document.getElementById("e");
   var context = canvas.getContext("2d");
-  var puppy = new image();
-  puppy.src = "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg";
-  puppy.onload = function() {
-    context.drawimage(puppy, 250, 150);
-  
-  }
-	//link of image and measurements to appear in canvas
+  var cat = new image();
+  cat.src = "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg" ;
+  cat.onload = function() {
+    context.drawimage(cat, 0, 0);
+  };
+	
+	//function that draws image 
+}
+
 	
 
 </script>
