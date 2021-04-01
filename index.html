@@ -63,13 +63,16 @@ function clear_canvas() {
 	//this codes for the clearing images off of the canvas
 }
 
-window.onload = function() {
   var canvas = document.getElementById("e");
   var context = canvas.getContext("2d");
-  var puppy = document.getElementById("puppy");
-  context.drawImage(puppy, 250, 150);
-};
-
+  var puppy = new Image();
+  puppy.src = "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg";
+  puppy.onload = function() {
+    context.drawImage(puppy, 250, 150);
+  };
+	
+	//link of image and measurements to appear in canvas
+	
 
 </script>
  <!-- The script includes the functions that make canvas and objects appear-->
@@ -112,12 +115,6 @@ window.onload = function() {
 	<!-- This is the header of the canvas page-->
 
 <div id="content" class="w3-container">
-
-<img id="puppy" src="https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg" 
-	alt="running puppy" width="250" height="150">
-
-	<!--link of image and measurements to appear in canvas-->
-	
 <canvas id="a" width="275" height="175"></canvas>
 	
 	<!-- This code adds in the canvas with the ideal measurements-->
