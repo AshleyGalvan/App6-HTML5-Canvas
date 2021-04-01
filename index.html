@@ -62,7 +62,16 @@ function clear_canvas() {
 	
 	//this codes for the clearing images off of the canvas
 }
-	
+<img id="puppy" src="https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg" 
+	alt="running puppy" width="250" height="150">
+
+window.onload = function() {
+  var canvas = document.getElementById("e");
+  var context = canvas.getContext("2d");
+  var puppy = document.getElementById("puppy");
+  context.drawImage(puppy, 250, 150);
+};
+
 
 </script>
  <!-- The script includes the functions that make canvas and objects appear-->
