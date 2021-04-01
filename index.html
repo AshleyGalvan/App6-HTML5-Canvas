@@ -63,27 +63,14 @@ function clear_canvas() {
 	//this codes for the clearing images off of the canvas
 }
 
-var sun1 = new Image();
-   sun1.addEventListener('load', eventSunLoad, false); //adds image to sun1 file
-   sun1.src = "sun.png";	
-}
-function draw_image(){
-   var a_canvas = document.getElementById("a");
-   var a_context = a_canvas.getContext("2d");
-   a_context.drawImage(sun1, 80,80,100,100); //function that draws image 
-}
- 
-function eventSunLoad(){
-   drawScreen();
-} // creates a function that specifies the image to the canvas
- 
-function drawScreen(){
-   context.drawImage(sun1,80,80,100,100); //dimensions of the image
-}
-
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img, 10, 10);
+};
  
 	//function that draws image 
-}
+	
 </script>
  <!-- The script includes the functions that make canvas and objects appear-->
 
