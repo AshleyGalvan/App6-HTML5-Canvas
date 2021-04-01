@@ -64,13 +64,14 @@ function clear_canvas() {
 }
 	
 function drawimage() {
-	var mycanvas = document.getElementById('mycanvas');
-	var ctx = mycanvas.getContext('2d');
+	var a_canvas = document.getElementById("a");
+	var ctx = a_canvas.getContext("2d");
 	var img = new image();
 	img.src = "https://clipartix.com/wp-content/uploads/2016/04/Flowers-flower-clipart-images-clipart.png" ;
 	img.onload = function(){
 	ctx.drawimage(img, 20, 20);
-		
+	
+	//This adds the image onto the canvas 
 }
 	
 </script>
