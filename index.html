@@ -51,14 +51,14 @@ function draw_rectangle() {   //creates rectangle
 function draw_name(){
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   a_context.fillText("Ashley Galvan", 50, 80);
+   a_context.fillText("Ashley Galvan", 50, 80); //dimensions for name input
 }	
 	// codes for name and size of it within the canvas
 
 function clear_canvas() {   
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   a_context.clearRect(1, 1, 200, 200);  
+   a_context.clearRect(1, 1, 200, 200);  //dimensions for clearing canvas 
 
 	//this codes for the clearing images off of the canvas
 }
@@ -67,14 +67,14 @@ function draw_image() {
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
    var img = new Image();
-   img.src= "https://www.kindpng.com/picc/m/124-1240807_star-outline-transparent-outline-star-shape-hd-png.png";
-   //img.onload= function(){
-   a_context.drawImage(img, 25, 25, 150, 150);
-
+   img.src= "https://www.kindpng.com/picc/m/124-1240807_star-outline-transparent-outline-star-shape-hd-png.png"; //url link for image from the internet
+   a_context.drawImage(img, 25, 25, 150, 150); //dimensions for star image on canvas
+	
 	//This adds the image onto the canvas 
 }
 </script>
- <!-- The script includes the functions that make canvas and objects appear-->
+	
+ <!-- The script includes the functions that allow buttons to work-->
 
 
 <style>	
@@ -114,33 +114,35 @@ function draw_image() {
 	<!-- This is the header of the canvas page-->
 
 <div id="content" class="w3-container">
-<canvas id="a" width="275" height="175"></canvas>
+	<canvas id="a" width="275" height="175"></canvas>
 	
 	<!-- This code adds in the canvas with the ideal measurements-->
 	
-<a onclick="draw_rectangle();" class="w3-btn w3-black" > Draw Rectangle </a>
+<a onclick="draw_rectangle();" class="w3-btn w3-black" > Draw Rectangle </a> <!-- The button is black and the name of the button is Draw Rectangle-->
 	
 	<!-- This adds the button that adds rectangle to canvas-->
 	
-<a onclick="draw_name();" class="w3-btn w3-black"> Draw Name </a>
+<a onclick="draw_name();" class="w3-btn w3-black"> Draw Name </a> <!-- The button is black and the name of the button is at the end of the code-->
    
 	<!-- codes for the name button -->
 
-<a onclick="draw_image();" class="w3-btn w3-black"> Draw Image </a>
+<a onclick="draw_image();" class="w3-btn w3-black"> Draw Image </a>  <!-- The button is black and the name of the button is at end of code-->
     
 	<!-- codes for the image drawing button -->
       
-<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas </a>
+<a onclick="clear_canvas();" class="w3-btn w3-black"> Clear Canvas </a> <!-- The button is black and the name of the button is at end of code-->
      
 	<!-- codes for the button that will clear the canvas -->
   
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+	<!-- the information will show up below the canvas-->
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	<p>DIY!</p> 
 </footer>
 
 </body>
